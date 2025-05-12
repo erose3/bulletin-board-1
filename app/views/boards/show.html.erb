@@ -68,17 +68,65 @@
       </div>
 
       <div>
-        <label for="board_id_box" type="hidden" value= @the_board.id >
-          @the_board.id
+        <label for="board_id_box">
         </label>
 
-        <input type="text" id="board_id_box" name="query_board_id">
+        <input type="hidden" id="board_id_box" name="query_board_id" value= <%= @the_board.id %> >
       </div>
 
       <button>
         Create post
       </button>
     </form>
+
+
+<hr>
+
+<h2>Active posts</h2>
+
+<table border="1">
+  <tr>
+    <th>
+      Title
+    </th>
+
+    <th>
+      Body
+    </th>
+
+    <th>
+      Posted on
+    </th>
+
+    <th>
+      Expires on
+    </th>
+
+  </tr>
+</table>
+
+<h2>Expired posts</h2>
+
+<table border="1">
+  <tr>
+    <th>
+      Title
+    </th>
+
+    <th>
+      Body
+    </th>
+
+    <th>
+      Posted on
+    </th>
+
+    <th>
+      Expires on
+    </th>
+
+  </tr>
+</table>
 
 
 <hr>
